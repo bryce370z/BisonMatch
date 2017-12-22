@@ -12,10 +12,12 @@ import { AboutBisonMatchComponent } from './about-bison-match/about-bison-match.
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ResultsComponent } from './results/results.component';
+import { QuizStartComponent } from './quiz-start/quiz-start.component';
 const appRoutes: Routes = [
   { path: 'toAboutBM', component: AboutBisonMatchComponent },
   { path: 'toHome',      component: HomeComponent },
   { path: 'toResults',      component: ResultsComponent },
+    { path: 'quizStart',      component: QuizStartComponent },
   // {
   //   path: 'heroes',
   //   component: HeroListComponent,
@@ -37,6 +39,7 @@ const appRoutes: Routes = [
     AboutBisonMatchComponent,
     HomeComponent,
     ResultsComponent,
+    QuizStartComponent,
   ],
   imports: [
     BrowserModule,
