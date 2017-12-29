@@ -1,14 +1,27 @@
 
 
 <main role="main" class="container">
-  <div class="card border-secondary mb-3">
+
+  <div class="card border-info mb-3" [hidden]="i > 0">
+    <div class="card-header">Basic Info</div>
+    <div class="card-body text-info">
+      <h4 class="card-title">Info card title</h4>
+      <p class="card-text">First name, Last name, L#, email, short bio  </p>
+
+
+      <button type="button"  (click)="previousQuestion()" class="btn btn-primary btn-large">Previous</button>
+  <button type="button"  (click)="nextQuestion()" class="btn btn-danger btn-large">Next</button>
+    </div>
+  </div>
+
+  <div class="card border-secondary mb-3" *ngIf="i > 0">
   <div class="card-header">Question {{quizQuestions[i].questionNo}}/10</div>
   <div class="card-body text-secondary">
   <img class="card-img-top" src="{{quizQuestions[i].questionImg}}" height="450px" width="450px" alt="Card image cap">
 
     <h4 class="card-title">{{quizQuestions[i].questionS}}</h4>
 
-    <div class="form-group ">
+    <div class="form-group">
     <input name="group100" type="radio" id="radio100" checked>
     <label for="radio100">{{quizQuestions[i].option1}} </label>
 </div>
