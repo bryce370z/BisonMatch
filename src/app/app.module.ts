@@ -14,9 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { ResultsComponent } from './results/results.component';
 import { QuizStartComponent } from './quiz-start/quiz-start.component';
 const appRoutes: Routes = [
-  { path: 'toAboutBM', component: AboutBisonMatchComponent },
-  { path: 'toHome',      component: HomeComponent },
-  { path: 'toResults',      component: ResultsComponent },
+  { path: 'AboutBM', component: AboutBisonMatchComponent },
+  { path: 'Home',      component: HomeComponent },
+  { path: 'Results',      component: ResultsComponent },
     { path: 'quizStart',      component: QuizStartComponent },
   // {
   //   path: 'heroes',
